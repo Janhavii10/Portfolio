@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg"
+                    class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Front-End Developer</p>
+                <h1>Hi I'm <span>Janhavi Paul</span><br> looking for avenues to <br>foray into the future</h1>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------About----------------------------------- -->    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic.jpeg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm currently in final year pursuing B.Tech from Jalpaiguri Government Engineering College </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>C/C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2022</span><br>Marpu Foundation - <i>Web Content Writer Intern - <a href="https://drive.google.com/drive/u/0/folders/1Rfu7-xONCNaqtQ5fFzBxmK1LefJI8Hql">(Certificate)</a></i>
+                            </li>
+                            <li><span>June - August 2023</span><br>Celebal Technologies - <i>Data Science Intern - <a href="https://drive.google.com/drive/u/0/folders/1Rfu7-xONCNaqtQ5fFzBxmK1LefJI8Hql">(Certificate)</a></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>August 2021 - July 2024</span><br>Jalpaiguri Government Engineering College -
+                                <i>B.Tech in Electronics and Communication Engineering</i>
+                            </li>
+                            <li><span>July 2018 - August 2021</span><br>Birla Institute of Technology, Kolkata -
+                                <i>Diploma in Electronics and Tele-Communication Engineering</i>
+                            </li>
+                            <li><span>March 2016 - July 2018</span><br>Army Public School, Barrackpore - <i>Higher
+                                    Secondary (CBSE)</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------interests---------------------------------- -->
+    <div id="interests">
+        <div class="container">
+            <h1 class="subtitle">My Interests</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I'm deeply enthusiastic about the world of development, and actively pursue opportunities to expand my knowledge and expertise in this area. I enjoy crafting interactive and user-friendly web experiences to bring digital ideas to life.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI / UX Design</h2>
+                    <p>I have a strong passion for the creative and user-centric aspects of UI and UX design, and I'm actively engaged in exploring and enhancing my skills in this field.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-feather"></i>
+                    <h2>Content Writing</h2>
+                    <p>I'm passionate about content writing and continually strive to enhance my writing abilities. I take pleasure in producing compelling and informative content on a wide range of subjects for different platforms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://i.pinimg.com/236x/c2/76/1b/c2761bfbbe6f5ff6522db5b2034dea7c.jpg"
+                        alt="">
+                    <div class="layer">
+                        <h2>Profile Card</h2>
+                        <p>Developed a personalized profile card utilizing HTML and CSS to present essential information in a visually appealing manner. </p>
+                        <a href="#">Repository<i class="fa-brands fa-github"></i></a>
+                        <a href="#">Website<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="layer">
+                        <h2>Homepage Demo</h2>
+                        <p>Designed and implemented a feature-rich homepage for a website, employing HTML, CSS, and JavaScript to craft an appealing and responsive layout with interactive elements. </p>
+                        <a href="https://github.com/Janhavii10/Homepage-Demo">Repository<i class="fa-brands fa-github"></i></a>
+                        <a href="https://janhavii10.github.io/Homepage-Demo/">Website<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1532152734721-b08cb57943aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="layer">
+                        <h2>Expanding Cards</h2>
+                        <p>When clicked or hovered over, the cards expand and reveal additional content or information, providing a visually engaging way to present and explore multimedia or text-based content on a web page.</p>
+                        <a href="https://github.com/Janhavii10/Expanding-Cards">Repository<i class="fa-brands fa-github"></i></a>
+                        <a href="https://janhavii10.github.io/Expanding-Cards/">Website<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------------contact form----------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-house"></i>Baranagar, Kolkata, West-Bengal</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>janhavii288@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6291024288</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/janhavi-paul-802996228/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Janhavii10"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/janhavii288/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <a href="resume.pdf" download="Resume" class="btn btn-2">Download
+                        CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Janhavi. Made with <i class="fa-solid fa-heart"></i> by J</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
